@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="images/title.png" alt="Earneston Eagles" height="40">
+        <img src="images/title.png" alt="Earneston Eagles" height="50">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,33 +104,39 @@
 
   <!-- Match fixtures -->
   <section id="fixtures" class="container py-4">
-    <h2>Match Fixtures</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Opponent</th>
-          <th>Score</th>
-          <th>Result</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Terryland Tigers</td>
-          <td>3-1</td>
-          <td>Win</td>
-        </tr>
-        <tr>
-          <td>Fingal Flyers</td>
-          <td>2-2</td>
-          <td>Draw</td>
-        </tr>
-        <tr>
-          <td>Oldtown FC</td>
-          <td>1-0</td>
-          <td>Win</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2 class="mb-4">Match Fixtures</h2>
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="table-responsive rounded shadow-sm">
+          <table class="table table-hover align-middle mb-0 fixtures-table">
+            <thead>
+              <tr>
+                <th>Opponent</th>
+                <th class="text-center">Score</th>
+                <th class="text-center">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Terryland Tigers</td>
+                <td class="text-center fw-bold">3-1</td>
+                <td class="text-center"><span class="badge text-bg-success">Win</span></td>
+              </tr>
+              <tr>
+                <td>Fingal Flyers</td>
+                <td class="text-center fw-bold">2-2</td>
+                <td class="text-center"><span class="badge text-bg-warning">Draw</span></td>
+              </tr>
+              <tr>
+                <td>Oldtown FC</td>
+                <td class="text-center fw-bold">1-0</td>
+                <td class="text-center"><span class="badge text-bg-success">Win</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Club officers -->

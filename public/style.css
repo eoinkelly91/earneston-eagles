@@ -51,13 +51,29 @@ h2 {
 }
 
 /* Fixtures table */
-.table {
+.fixtures-table {
     --bs-table-bg: #fff;
+    --bs-table-hover-bg: #f6effc;
+    font-family: Montserrat, sans-serif;
 }
 
-.table thead th {
+.fixtures-table thead th {
     background-color: var(--eagles-purple);
     color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 0.9rem 1rem;
+    border-bottom: 3px solid var(--eagles-orange);
+}
+
+.fixtures-table td {
+    padding: 0.85rem 1rem;
+}
+
+.fixtures-table tbody tr:last-child td {
+    border-bottom: 0;
 }
 
 /* Officer cards */
