@@ -1,6 +1,86 @@
+:root {
+    --eagles-purple: #4b2a7b;
+    --eagles-purple-dark: #35195c;
+    --eagles-lavender: #f1eaf9;
+    --eagles-orange: #f28c28;
+    --eagles-orange-dark: #c2610c;
+}
+
+/* Fonts */
 h1,
 h2,
 h3,
 p {
     font-family: Montserrat, sans-serif;
+}
+
+/* Page background and text */
+body {
+    background-color: var(--eagles-lavender);
+    color: #2b1b45;
+}
+
+/* Headings */
+h1,
+h2 {
+    color: var(--eagles-purple);
+}
+
+h2 {
+    display: inline-block;
+    border-bottom: 3px solid var(--eagles-orange);
+    padding-bottom: 0.25rem;
+}
+
+/* Navbar */
+.navbar {
+    --bs-tertiary-bg-rgb: 255, 255, 255;
+    border-bottom: 4px solid var(--eagles-purple);
+    --bs-navbar-color: var(--eagles-purple);
+    --bs-navbar-hover-color: var(--eagles-orange-dark);
+    --bs-navbar-active-color: var(--eagles-orange-dark);
+}
+
+.navbar .nav-link {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.navbar .nav-link.active {
+    border-bottom: 2px solid var(--eagles-orange);
+}
+
+/* Fixtures table */
+.table {
+    --bs-table-bg: #fff;
+}
+
+.table thead th {
+    background-color: var(--eagles-purple);
+    color: #fff;
+}
+
+/* Officer cards */
+.card {
+    border: 0;
+    border-top: 4px solid var(--eagles-orange);
+}
+
+.card .text-secondary {
+    color: var(--eagles-purple) !important;
+}
+
+/* Links in the page body and footer */
+main a,
+footer a {
+    color: var(--eagles-purple);
+}
+
+main a:hover,
+footer a:hover {
+    color: var(--eagles-orange-dark);
+}
+
+footer {
+    border-color: var(--eagles-purple) !important;
 }
