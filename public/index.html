@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Make the pages layout width match the actual screen width of the device -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Earneston Eagles</title>
   <!-- Bootstrap -->
@@ -15,19 +16,16 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
-<!-- Bootstrap JS (Navbar Hamburger) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Bootstrap JS (News Carousel) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
 <body>
 
   <!-- Navbar -->
+  <!-- navbar-expand-md: controls when the navbar is collapsed into a hamburger menu (md is 768px) -->
   <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/title.png" alt="Earneston Eagles" height="50">
       </a>
+      <!-- Hamburger button that toggles the information in the div below when collaped -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,13 +42,14 @@
   </nav>
 
   <!-- Latest news and updates -->
+  <!-- py-4: Bootstrap spacing: propert/sides/size -->
   <section id="news" class="container py-4">
     <h2>Latest News and Updates</h2>
     <div class="row">
       <div class="col-12 col-md-6">
-
+        <!-- Bootstrap carousel. data-bs-interval="5000: transition time -->
         <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
+          <!-- the samll bars at ht ebottom of the carousel.-->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true"
               aria-label="Slide 1"></button>
@@ -59,10 +58,8 @@
           </div>
 
           <div class="carousel-inner">
-            <!-- One carousel-item per story. To add a story, copy a block and paste it after the last one,
-                   and add a matching indicator button above (slide-to number goes up by one).
-                   Only the first slide has "active". -->
             <div class="carousel-item active">
+              <!-- object-fit: cover fills the 300px box and crops the overflow -->
               <img src="images/coach.jpg" class="d-block w-100 object-fit-cover" style="height: 300px;"
                 alt="Chambers reacts to win vs Tigers">
               <div class="carousel-caption bg-dark bg-opacity-50 rounded py-2">
@@ -87,6 +84,7 @@
             </div>
           </div>
 
+          <!-- buttons on the left and right edges of the carousel.-->
           <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -106,7 +104,9 @@
   <section id="fixtures" class="container py-4">
     <h2 class="mb-4">Match Fixtures</h2>
     <div class="row">
+      <!-- col-lg-8: from the lg breakpoint (992px) upward, switch to 8 columns instead -->
       <div class="col-12 col-lg-8">
+        <!-- table-responsive: if the table is wider than its container, this adds a horizontal scrollbar-->
         <div class="table-responsive rounded shadow-sm">
           <table class="table table-hover align-middle mb-0 fixtures-table">
             <thead>
@@ -142,19 +142,23 @@
   <!-- Club officers -->
   <section id="officers" class="container py-4">
     <h2 class="mb-4">Club Officers</h2>
+    <!-- g-4: the gap between columns in a grid -->
     <div class="row g-4">
 
       <div class="col-12 col-md-4">
+        <!-- Bootstrap class that turns a <div> into a card: a self-contained box for grouping related content-->
         <div class="card h-100 shadow-sm">
           <img src="images/chairman.jpg" class="card-img-top object-fit-cover" style="height: 280px;"
             alt="Robert Mitchell, Chairman">
           <div class="card-body">
             <h3 class="card-title h5 text-uppercase text-secondary">Chairman</h3>
+            <!-- Bootstrap text utilities: fw = font weight, fs = font size, fst = font style -->
             <p class="card-text fw-bold fs-5 mb-2">Robert Mitchell</p>
             <p class="card-text">Oversees the club's vision, steering the Eagles toward a successful,
               community-focused future.</p>
           </div>
           <div class="card-footer bg-transparent">
+            <!-- Bootstrap’s styling for quoted text-->
             <blockquote class="blockquote mb-0 fs-6 fst-italic">
               "Our club is built on passion and community. My focus is on ensuring we continue to provide a great,
               inclusive space for everyone to thrive."
@@ -219,6 +223,9 @@
           Regulations</a></li>
     </ul>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
